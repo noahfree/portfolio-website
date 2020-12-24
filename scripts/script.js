@@ -47,9 +47,9 @@ $("#experience .languages").hover(
         $("#experience .languages li").css("opacity", "1");
     },
     function(){
-        $("#experience .languages h2").css("opacity", "0.5");
-        $("#experience .languages .line").css("opacity", "0.5");
-        $("#experience .languages li").css("opacity", "0.5");
+        $("#experience .languages h2").css("opacity", "0.3");
+        $("#experience .languages .line").css("opacity", "0.3");
+        $("#experience .languages li").css("opacity", "0.3");
     }
 );
 
@@ -61,10 +61,10 @@ $("#experience .work").hover(
         $("#experience .work li").css("opacity", "1");
     },
     function(){
-        $("#experience .work h2").css("opacity", "0.5");
-        $("#experience .work .line").css("opacity", "0.5");
-        $("#experience .work h3").css("opacity", "0.5");
-        $("#experience .work li").css("opacity", "0.5");
+        $("#experience .work h2").css("opacity", "0.3");
+        $("#experience .work .line").css("opacity", "0.3");
+        $("#experience .work h3").css("opacity", "0.3");
+        $("#experience .work li").css("opacity", "0.3");
     }
 );
 
@@ -144,7 +144,3 @@ $(document).scroll(function(){
 //function scrollTo(elementId){
 //    document.getElementById(elementId).scrollIntoView();
 //}
-
-
-
-
