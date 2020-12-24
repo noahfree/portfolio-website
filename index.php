@@ -8,29 +8,21 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Poppins&family=Source+Code+Pro&family=Rajdhani&display=swap" rel="stylesheet">
 </head>
 <body onload="getInfo('', '#classContent')">
     <nav id="navbar">
-        <a href="index.html">Noah Free</a>
+        <a href="index.php">Noah Free</a>
         <div class="burger">
             <p class="line1"></p>
             <p class="line2"></p>
             <p class="line3"></p>
         </div>
         <div class="items">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#classes">Classes</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
+            <?php include "includes/navLinks.php"; ?>
         </div>
         <div class="mobile">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#classes">Classes</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
+            <?php include "includes/navLinks.php"; ?>
         </div>
     </nav>
     <div id="noahfree">
@@ -96,10 +88,6 @@
         <div>
             <h1>Contact</h1>
             <div class="line"></div>
-        </div>
-        <div class="tab">
-            <p class="label">Phone</p>
-            <p class="info">(314) 702-0623</p>
         </div>
         <div class="tab">
             <p class="label">Email</p>
