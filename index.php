@@ -70,6 +70,7 @@
                 <option>Computer Science</option>
                 <option>Economics</option>
                 <option>Mathematics</option>
+                <option>Statistics</option>
             </select>
             <select onchange="updateContent()" id="selectClass">
                 <option disabled selected>select a class</option>
