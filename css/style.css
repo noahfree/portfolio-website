@@ -313,6 +313,11 @@ nav > div a:hover {
     background-color: #bcbcbc;
 }
 
+#experience a {
+    text-decoration: none;
+    color: #000;
+}
+
 #experience h1 {
     width: 300px;
     font-family: 'Cinzel', serif;
@@ -322,7 +327,14 @@ nav > div a:hover {
     margin: 0 auto 50px auto;
     padding: 1vw;
     background-color: #fff;
+    box-shadow: 0 2px 3px #696969;
+    transition: all 0.8s ease;
+    cursor: pointer;
+}
+
+#experience h1:hover {
     box-shadow: 0 6px 9px #696969;
+    transform: translateY(-20px);
 }
 
 #experience h2 {
@@ -367,10 +379,6 @@ nav > div a:hover {
     margin: 10px 0;
     opacity: 0.3;
     transition: opacity 0.75s ease;
-}
-
-#experience a {
-    color: #000;
 }
 
 #experience > div {
@@ -746,6 +754,11 @@ nav > div a:hover {
     background-color: #000;
 }
 
+#resume a {
+    text-decoration: none;
+    color: #000;
+}
+
 #resume h1 {
     width: 100%;
     text-align: center;
@@ -753,6 +766,7 @@ nav > div a:hover {
     font-family: 'Cinzel', serif;
     font-weight: 600;
     font-size: 44px;
+    cursor: alias;
 }
 
 #resume iframe {
@@ -911,3 +925,5 @@ nav > div a:hover {
     }
 }
 /* end of footer styles */
+
+
