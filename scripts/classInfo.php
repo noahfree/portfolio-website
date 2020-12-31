@@ -90,6 +90,11 @@ switch($infoId){
         $grade = "A+";
         $description = "This course provides experience in developing algorithms, designing, implementing programs. Topics include syntax/semantics, flow control, loops, recursion, I/O, arrays, strings and pointers.";
         break;
+    case "Intermediate Macroeconomics":
+        $term = "Spring 2021";
+        $grade = "IP";
+        $description = "The study of the structure and performance of national economics.  Topics include: long-term economic growth, aggregate economic fluctuations, unemployment, and inflation; consequences for national economies of being part of the global economic system; government policies and macroeconomic performance.";
+        break;
     case "Intermediate Microeconomics":
         $term = "Fall 2020";
         $grade = "A+";
@@ -104,11 +109,6 @@ switch($infoId){
         $term = "Fall 2019";
         $grade = "A+";
         $description = "A broad survey of microeconomics, from the basic market model and its many applications to market failures and policy responses.  Topics include potential trade offs between efficiency and equity in competition and trade policy; determinants of wage differentials, poverty and inequality; and evaluation of the benefits and costs of government interventions in markets.";
-        break;
-    case "Principles of Macroeconomics":
-        $term = "Spring 2021";
-        $grade = "IP";
-        $description = "The study of the structure and performance of national economics.  Topics include: long-term economic growth, aggregate economic fluctuations, unemployment, and inflation; consequences for national economies of being part of the global economic system; government policies and macroeconomic performance.";
         break;
     case "Discrete Mathematics": 
         $term = "Fall 2020";
