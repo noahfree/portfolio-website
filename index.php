@@ -81,7 +81,7 @@
         </div>
     </div>
     <div id="resume">
-        <h1>Resume</h1>
+        <a href="documents/NoahFree-Resume.pdf" target="_blank"><h1>Resume</h1></a>
         <div class="line"></div>
         <iframe src="documents/NoahFree-Resume.pdf"></iframe>
     </div>
