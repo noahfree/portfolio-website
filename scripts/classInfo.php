@@ -4,7 +4,7 @@ $infoId = empty($_GET['infoId']) ? '' : $_GET['infoId'];
 
 if ($infoId == ""){
     if (isset($_COOKIE['class'])){
-        if ($_COOKIE['class'] != 'Computer Science' && $_COOKIE['class'] != 'Economics' && $_COOKIE['class'] != 'Mathematics'){
+        if ($_COOKIE['class'] != 'Computer Science' && $_COOKIE['class'] != 'Economics' && $_COOKIE['class'] != 'Mathematics' && $_COOKIE['class'] != 'Statistics'){
             $infoId = $_COOKIE['class'];
         }
     }
@@ -12,7 +12,7 @@ if ($infoId == ""){
         $infoId = "Object Oriented Programming";
     }
 }
-else if ($infoId != 'Computer Science' && $infoId != 'Economics' && $infoId != 'Mathematics'){
+else if ($infoId != 'Computer Science' && $infoId != 'Economics' && $infoId != 'Mathematics' && $infoId != 'Statistics'){
     setcookie("class", $infoId);
 }
 
@@ -28,22 +28,37 @@ switch($infoId){
     case 'Computer Science':
         $link = "http://catalog.missouri.edu/undergraduategraduate/collegeofengineering/computerscience/#courseinventory";
         setcookie("link", $link);
-        $array = array("Object Oriented Programming", "Advanced Algorithm Design", "Web Application Development I", "Introduction to Logic Systems", "Algorithm Design and Programming II", "Algorithm Design and Programming I");
+        $array = array("Python 1: Learn to Program in Python", "Database Applications and Information Systems", "Computer Organization and Assembly Language", "Object Oriented Programming", "Advanced Algorithm Design", "Web Application Development I", "Introduction to Logic Systems", "Algorithm Design and Programming II", "Algorithm Design and Programming I");
         break;
     case 'Economics':
         $link = "http://catalog.missouri.edu/courseofferings/econom/";
         setcookie("link", $link);
-        $array = array("Intermediate Microeconomics", "Principles of Macroeconomics", "Principles of Microeconomics");
+        $array = array("Intermediate Macroeconomics", "Intermediate Microeconomics", "Principles of Macroeconomics", "Principles of Microeconomics");
         break;
     case 'Mathematics':
         $link = "http://catalog.missouri.edu/courseofferings/math/";
         setcookie("link", $link);
         $array = array("Discrete Mathematics", "Calculus 3", "Calculus 2", "Calculus 1");
         break;
+    case 'Statistics':
+        $link = "http://catalog.missouri.edu/courseofferings/stat/";
+        setcookie("link", $link);
+        $array = array("Introduction to Mathematical Statistics");
+        break;
     case "Object Oriented Programming":
         $term = "Fall 2020";
         $grade = "A";
         $description = "This course focuses on teaching object-oriented programming concepts through the Java language:  abstraction, polymorphism, encapsulation, inheritance, interfaces, abstract classes, files, streams, and object serialization.  Topics such as GUI and event-driven programming are also tackled.";
+        break;
+    case "Python 1: Learn to Program in Python":
+        $term = "Spring 2021";
+        $grade = "IP";
+        $description = "An introduction to the Python 3 programming language, covering various topics and paradigms.";
+        break;
+    case "Database Applications and Information Systems":
+        $term = "Spring 2021";
+        $grade = "IP";
+        $description = "Covers fundamental topics of database management systems (DBMS) and database-enabled applications.  Topics include a brief history of secondary storage and databases, data modeling, introductory SQL, an overview of current database trends, and current popular database systems.";
         break;
     case "Advanced Algorithm Design":
         $term = "Fall 2020";
@@ -54,6 +69,11 @@ switch($infoId){
         $term = "Fall 2020";
         $grade = "A";
         $description = "This course will attempt to provide a comprehensive understanding of the evolution, the technologies, and the tools of the Internet. In particular, issues pertaining to the World Wide Web and Multimedia (HTML, CGI, Web based applications) will be discussed in detail.";
+        break;
+    case "Computer Organization and Assembly Language":
+        $term = "Spring 2021";
+        $grade = "IP";
+        $description = "Introduces computer architectures, programming concepts including parameter passing, I/O, interrupt handling, DMA, memory systems, cache, and virtual memory.";
         break;
     case "Introduction to Logic Systems": 
         $term = "Spring 2020";
@@ -85,6 +105,11 @@ switch($infoId){
         $grade = "A+";
         $description = "A broad survey of microeconomics, from the basic market model and its many applications to market failures and policy responses.  Topics include potential trade offs between efficiency and equity in competition and trade policy; determinants of wage differentials, poverty and inequality; and evaluation of the benefits and costs of government interventions in markets.";
         break;
+    case "Principles of Macroeconomics":
+        $term = "Spring 2021";
+        $grade = "IP";
+        $description = "The study of the structure and performance of national economics.  Topics include: long-term economic growth, aggregate economic fluctuations, unemployment, and inflation; consequences for national economies of being part of the global economic system; government policies and macroeconomic performance.";
+        break;
     case "Discrete Mathematics": 
         $term = "Fall 2020";
         $grade = "A";
@@ -104,6 +129,11 @@ switch($infoId){
         $term = "Spring 2019";
         $grade = "A+";
         $description = "Elementary analytic geometry, functions, limits, continuity, derivatives, antiderivatives, definite integrals. Math Proficiency Reasoning Course.";
+        break;
+    case "Introduction to Mathematical Statistics":
+        $term = "Spring 2021";
+        $grade = "IP";
+        $description = "Introduction to theory of probability and statistics using concepts and methods of calculus.";
         break;
 }
 
